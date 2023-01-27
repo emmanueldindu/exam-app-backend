@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
 export default async function connect() {
-    mongoose.connect()
+    await mongoose.connect(process.env.ATLAS_URL)
+    console.log('connected to mongoDB')
 }
