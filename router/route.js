@@ -11,7 +11,14 @@ import * as controller from '../controllers/controller.js'
 // router.post('/questions', controller.insertQuestions)
  
 
-router.route('/questions').get(controller.getQuestions).post(controller.insertQuestions)
+router.route('/questions')
+    .get(controller.getQuestions)
+    .post(controller.insertQuestions)
+    .delete(controller.deleteQuestions)
 
+router.route('/result')
+    .get(controller.getResults)
+    .post(controller.postResults)
+    .delete(controller.deleteResults)
 
 export default router
