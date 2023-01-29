@@ -8,7 +8,9 @@ import connect from './database/connection.js'
 const app = express()
 // app middleware
 app.use(morgan('tiny'))
-app.use(cors())
+app.use(cors({
+    origin: 'https://exam-app-frontend-p0z4ynnfr-emmanueldindu.vercel.app/'
+}))
 app.use(express.json())
 config()
 
