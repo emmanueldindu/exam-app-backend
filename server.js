@@ -9,7 +9,7 @@ const app = express()
 // app middleware
 app.use(morgan('tiny'))
 app.use(cors({
-    origin: 'https://exam-app-frontend-4sac.vercel.app/'
+    origin: 'https://exam-app-frontend-4sac.vercel.app'
 }))
 app.use(express.json())
 config()
